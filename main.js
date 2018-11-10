@@ -1,2 +1,2 @@
 
-console.log('adolf hitler');
+console.log('josef stalin');
