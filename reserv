@@ -1,0 +1,79 @@
+
+document.getElementById('row').addEventListener('click', (event) => {
+  console.log(event.target);
+  event.target.style.backgroundImage = "url('whitePawn.png')" ;
+}); 
+
+
+
+<h1>Hello World!</h1>
+
+<div id="myDiv">This is a div element.</div>
+<br>
+
+<script>
+document.getElementById('myDiv').addEventListener('click', myFunction);
+function myFunction() {
+    event.target.style.backgroundImage = "url('img_tree.png')";
+    event.target.style.backgroundPosition = "center";
+}
+
+function StartGame(){
+  let x = document.getElementById('board').getElementsByClassName("row");
+
+    for (let i = 0; i < x.length ; i++){
+	let startposition = document.getElementById("board").getElementsByClassName("row")[6];
+  startposition.getElementsByTagName("div")[i].style.backgroundImage = "url('whitePawn.png')";
+  startposition.getElementsByTagName("div")[i].style.backgroundSize = "cover";
+  startposition.getElementsByTagName("div")[i].style.backgroundPosition = "center";
+  startposition.getElementsByTagName("div")[i].style.backgroundRepeat = "no-repeat";	 
+
+  
+  
+  
+  
+  
+  
+  
+  
+  function StartGame(a, b, c){
+  let x = document.getElementById('board').getElementsByClassName("row");
+  for (let i = 0; i < x.length ; i++){
+  let startposition = document.getElementById("board").getElementsByClassName("row")[a];
+  startposition.getElementsByTagName("div")[b].style.backgroundImage = c;
+  startposition.getElementsByTagName("div")[b].style.backgroundSize = "cover";
+  startposition.getElementsByTagName("div")[b].style.backgroundPosition = "center";
+  startposition.getElementsByTagName("div")[b].style.backgroundRepeat = "no-repeat";
+}
+let whitePawn = [6, "i", "url('whitePawn.png')"];
+StartGame(...whitePawn);
+}
+
+
+
+
+function StartGame(a, b, c){
+  let x = document.getElementById('board').getElementsByClassName("row");
+  for (let i = 0; i < x.length ; i++){
+  let startposition = x[a];
+  startposition.getElementsByTagName("div")[i].style.backgroundImage = "url('c')";
+  startposition.getElementsByTagName("div")[i].style.backgroundSize = "cover";
+  startposition.getElementsByTagName("div")[i].style.backgroundPosition = "center";
+  startposition.getElementsByTagName("div")[i].style.backgroundRepeat = "no-repeat";
+}
+let whitePawn = [6, "i", "url('whitePawn.png')"];
+StartGame(...whitePawn);
+}
+
+
+function StartGame(rowN){
+  let x = document.getElementById('board').getElementsByClassName("row");
+  for (let i = 0; i < x.length ; i++){
+  let startposition = document.getElementById("board").getElementsByClassName("row")[rowN];
+  startposition.getElementsByTagName("div")[i].style.backgroundImage = "url('whitePawn.png')";
+  startposition.getElementsByTagName("div")[i].style.backgroundSize = "cover";
+  startposition.getElementsByTagName("div")[i].style.backgroundPosition = "center";
+  startposition.getElementsByTagName("div")[i].style.backgroundRepeat = "no-repeat";
+}
+StartGame(6);
+}

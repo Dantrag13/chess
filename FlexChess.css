@@ -1,5 +1,4 @@
-body 
-{
+body {
   margin: 2%;
   background-color: #5d5d5d;
 }
@@ -10,10 +9,9 @@ body
   height: 80vw;
   max-height: 80vh;
   margin: auto;
-  display: flex;  
+  display: flex;
 }
-.board
-{
+.board {
   width: 80vw;
   max-width: 80vh;
   height: 80vw;
@@ -21,81 +19,76 @@ body
   margin: auto;
   display: flex;
   flex-wrap:wrap;
-  flex-direction: row;  
+  flex-direction: row;
 }
-.row
-{
+.row {
   margin; 0;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
 }
-.row div
-{
+.row div {
   display: flex;
   width: 10vw;
   max-width:10vh;
   height: 9vw;
   max-height: 9vh;
 }
-.row.odd
-{
+.row.odd {
   display: flex;
-  background: #DEB887; 
+  background: #DEB887;
 }
-.row.odd div:nth-child(2n)
-{
+.row.odd div:nth-child(2n) {
   display: flex;
-  background: #8B4513; 
+  background: #8B4513;
 }
-.row.even
-{
+.row.even {
   display: flex;
   background-color: #8B4513;
 }
-.row.even div:nth-child(2n)
-{
+.row.even div:nth-child(2n) {
   display: flex;
-  background: #DEB887; 
+  background: #DEB887;
 }
-.top-letters
-{
+.top-letters {
   width: 80vw;
   max-width: 80vh;
-  height: 3vw;
-  max-height: 3vh;
+  height: 4vw;
+  max-height: 4vh;
   display: flex;
   background-color: #7d694c;
   text-align: center;
   font-size: 100%;
 }
-.box-inner
-{
+.box-inner {
   width: 80vw;
   max-width: 80vh;
-  height: 3vw;
-  max-height: 3vh;
+  height: 4vw;
+  max-height: 4vh;
   display: flex;
   background-color: #7d694c;
   font-size: 100%;
   align-items: center;
   justify-content: center;
 }
-@media  screen and (max-height: 550px) and (max-width: 550px){
-body 
-{
-  margin: 1%;
-}  
-.top-letters{
-   font-size: 80%
+@media all and (min-width: 0px) and (max-width: 980px) {
+  body {
+    margin: 1%;
+  }
+  .top-letters {
+    font-size: 80%
+  }
 }
+@media screen and (max-height: 380px) and (max-width: 380px) {
+  body {
+    margin: 1%;
+  }
+  .top-letters{
+    font-size: 50%
+  }
 }
-@media  screen and (max-height: 380px) and (max-width: 380px){
-body 
-{
-  margin: 1%;
-}  
-.top-letters{
-   font-size: 50%
-}
+.wP {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
 }

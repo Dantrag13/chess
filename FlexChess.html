@@ -6,9 +6,9 @@
   <link rel="stylesheet" href="FlexChess.css">
 </head>
 <body>
-  <div class="table">    
-    <div class="board">
-      <div class="top-letters">
+  <div class="table" id="table">
+    <div class="board" id="board">
+    <div class="top-letters">
       <div class="box-inner">1</div>
       <div class="box-inner">2</div>
       <div class="box-inner">3</div>
@@ -28,7 +28,7 @@
         <div></div>
         <div></div>
       </div>
-		
+
 		  <div class="row even">
         <div></div>
         <div></div>
@@ -50,7 +50,7 @@
         <div></div>
         <div></div>
       </div>
-		
+
 		  <div class="row even">
         <div></div>
         <div></div>
@@ -61,7 +61,7 @@
         <div></div>
         <div></div>
       </div>
-      
+
       <div class="row odd">
         <div></div>
         <div></div>
@@ -72,7 +72,7 @@
         <div></div>
         <div></div>
       </div>
-		
+
 		  <div class="row even">
         <div></div>
         <div></div>
@@ -83,7 +83,7 @@
         <div></div>
         <div></div>
       </div>
-      
+
       <div class="row odd">
         <div></div>
         <div></div>
@@ -94,7 +94,7 @@
         <div></div>
         <div></div>
       </div>
-		
+
 		  <div class="row even">
         <div></div>
         <div></div>
@@ -104,7 +104,7 @@
         <div></div>
         <div></div>
         <div></div>
-        
+
       </div>
       <div class="top-letters">
       <div class="box-inner">1</div>
@@ -116,7 +116,11 @@
       <div class="box-inner">7</div>
       <div class="box-inner">8</div>
     </div>
-    </div>  
+    </div>
   </div>
+  <button type="button" onclick="StartGame()">Start Game</button>
+
+  <script src="./main.js"></script>
+  <script src="./startgame.js"></script>
 </body>
 </html>
